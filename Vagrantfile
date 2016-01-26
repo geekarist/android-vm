@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
+	config.ssh.forward_x11=true
 	config.vm.box = "ubuntu/trusty64"
 
 	# Create a forwarded port mapping which allows access to a specific port
